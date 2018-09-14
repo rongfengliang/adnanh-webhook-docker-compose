@@ -1,0 +1,9 @@
+version: "3"
+services:
+  webhook:
+    image: almir/webhook
+    command: ["-verbose", "-hooks=/etc/webhook/hooks.json","-hotreload"]
+    volumes:
+    - "./hooks.json:/etc/webhook/hooks.json"
+    ports:
+    - "9000:9000"

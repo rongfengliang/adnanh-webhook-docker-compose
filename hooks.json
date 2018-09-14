@@ -1,0 +1,20 @@
+[
+    {
+      "id": "simple-one",
+      "execute-command": "echo",
+      "response-message": "Executing simple webhook...",
+      "trigger-rule":
+      {
+        "match":
+        {
+          "type": "value",
+          "value": "42",
+          "parameter":
+          {
+            "source": "url",
+            "name": "token"
+          }
+        }
+      }
+    }
+  ]
