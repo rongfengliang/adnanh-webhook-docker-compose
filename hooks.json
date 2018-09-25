@@ -1,8 +1,21 @@
 [
     {
       "id": "simple-one",
-      "execute-command": "echo",
-      "response-message": "Executing simple webhook...",
+      "execute-command": "/shells/app",
+      "include-command-output-in-response":true,
+      "include-command-output-in-response-on-error":true,
+      "command-working-directory":"/shells",
+      "pass-arguments-to-command":
+    [
+      {
+        "source": "payload",
+        "name": "id"
+      },
+      {
+        "source": "url",
+        "name": "token"
+      }
+    ],
       "trigger-rule":
       {
         "match":
