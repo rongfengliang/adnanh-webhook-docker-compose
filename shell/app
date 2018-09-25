@@ -1,2 +1,3 @@
 #!/bin/sh
+printenv
 echo  $@ , $1, $2

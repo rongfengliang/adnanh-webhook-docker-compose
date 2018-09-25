@@ -14,6 +14,31 @@
       {
         "source": "url",
         "name": "token"
+      },
+      {
+        "source":"header",
+        "name":"token"
+      },
+      {
+        "source": "payload",
+        "name": "users.0.id"
+      },
+      {
+        "source": "url",
+        "name": "mytoken",
+        "envname": "MYTOKEN"
+      },
+      {
+        "source": "entire-payload",
+        "name":"all-json"
+      },
+      {
+        "source": "entire-headers",
+        "name":"all-header"
+      },
+      {
+        "source": "entire-query",
+        "name":"all-query"
       }
     ],
       "trigger-rule":
